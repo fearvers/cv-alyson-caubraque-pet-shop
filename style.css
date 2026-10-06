@@ -1,0 +1,358 @@
+/* ==============================
+   GENERAL
+============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9e4dc;
+    color: #292724;
+    line-height: 1.5;
+}
+
+.cv {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    padding: 16mm 17mm;
+    background: #ffffff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 18px;
+    border-bottom: 3px solid #8b765b;
+}
+
+h1 {
+    font-size: 34px;
+    line-height: 0.95;
+    letter-spacing: 2px;
+    color: #40372e;
+}
+
+.job-title {
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #8b765b;
+}
+
+.contact {
+    text-align: right;
+    font-size: 10.5px;
+    line-height: 1.8;
+    color: #55504a;
+}
+
+
+/* ==============================
+   SECTIONS
+============================== */
+
+section {
+    margin-top: 18px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #d8d0c6;
+    color: #8b765b;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+section p {
+    font-size: 10.5px;
+    margin-bottom: 7px;
+}
+
+
+/* ==============================
+   EXPERIENCE
+============================== */
+
+.experience {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.date {
+    font-size: 9.5px;
+    color: #8b765b;
+    font-weight: bold;
+    padding-top: 2px;
+}
+
+.content h3 {
+    font-size: 12.5px;
+    color: #40372e;
+}
+
+.location {
+    font-size: 9.5px !important;
+    color: #777;
+    margin: 0 !important;
+}
+
+.role {
+    font-size: 10px !important;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+ul {
+    padding-left: 17px;
+    margin-top: 5px;
+}
+
+li {
+    font-size: 9.8px;
+    margin-bottom: 3px;
+}
+
+
+/* ==============================
+   ANIMAL EXPERIENCE
+============================== */
+
+.animal-section {
+    background: #f7f4ef;
+    padding: 12px 14px;
+    margin-top: 15px;
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.animal-card {
+    text-align: center;
+    padding: 8px;
+}
+
+.animal-icon {
+    font-size: 25px;
+    margin-bottom: 4px;
+}
+
+.animal-card h3 {
+    font-size: 11px;
+    margin-bottom: 4px;
+    color: #40372e;
+}
+
+.animal-card p {
+    font-size: 9px;
+    line-height: 1.35;
+}
+
+
+/* ==============================
+   SKILLS
+============================== */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.skills span {
+    background: #f1ece5;
+    border: 1px solid #ddd3c7;
+    border-radius: 20px;
+    padding: 4px 9px;
+    font-size: 9px;
+    color: #51483e;
+}
+
+
+/* ==============================
+   EDUCATION
+============================== */
+
+.education {
+    margin-bottom: 8px;
+}
+
+.education h3 {
+    font-size: 10.5px;
+    color: #40372e;
+}
+
+.education p {
+    font-size: 9.5px;
+    color: #666;
+    margin: 0;
+}
+
+
+/* ==============================
+   LANGUAGES
+============================== */
+
+.languages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.languages div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2ddd7;
+    padding-bottom: 5px;
+}
+
+.languages strong {
+    font-size: 10px;
+}
+
+.languages span {
+    font-size: 9.5px;
+    color: #777;
+}
+
+
+/* ==============================
+   ADDITIONAL INFORMATION
+============================== */
+
+.additional ul {
+    columns: 2;
+    column-gap: 30px;
+}
+
+.additional li {
+    break-inside: avoid;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    margin-top: 15px;
+    padding-top: 8px;
+    border-top: 1px solid #ddd5cc;
+    text-align: center;
+}
+
+footer p {
+    font-size: 8.5px;
+    color: #888;
+}
+
+
+/* ==============================
+   RESPONSIVE WEB VERSION
+============================== */
+
+@media screen and (max-width: 800px) {
+
+    body {
+        background: #ffffff;
+    }
+
+    .cv {
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 30px 25px;
+        box-shadow: none;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact {
+        text-align: left;
+    }
+
+    .animal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience {
+        grid-template-columns: 1fr;
+        gap: 3px;
+    }
+
+    .additional ul {
+        columns: 1;
+    }
+}
+
+
+/* ==============================
+   PRINT / PDF
+============================== */
+
+@media print {
+
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+        background: white;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .cv {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        padding: 15mm 16mm;
+        box-shadow: none;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+
+    .experience {
+        break-inside: avoid;
+    }
+
+    .animal-section {
+        break-inside: avoid;
+    }
+
+    footer {
+        break-inside: avoid;
+    }
+}
